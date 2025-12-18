@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Form</h1>
+
+        <form id="userForm" novalidate>
+
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Write the full name" autocomplete="name">
+                <small class="error">error</small>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="example123@gamil.com" autocomplete="email">
+                <small class="error">error</small>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input id="phone" type="text" inputmode="numeric" placeholder="10 digit phone number" autocomplete="tel">
+                <small class="error">error</small>
+            </div>
+
+            <div class="input-group password-wrap">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Write the password"><span class="toggle-pass" id="togglePass" aria-hidden>👁</span>
+                <small class="error">error</small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+
+</html>
